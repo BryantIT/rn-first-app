@@ -6,8 +6,8 @@ export default function App() {
   const [outputText, setOutputText] = useState('Open up App.js to start working on your app!')
   return (
     <View style={styles.container}>
-      <Text>{outputText}</Text>
-      <Button title='Change Text' onPress={() => setOutputText('Cheyenne')}/>
+      <Text style={styles.text}>{outputText}</Text>
+    <Button title='Change Text' onPress={() => setOutputText('Just getting started')}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,8 +16,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'white',
+  }
 });
